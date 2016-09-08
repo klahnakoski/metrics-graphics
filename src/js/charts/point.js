@@ -321,15 +321,10 @@ function mg_color_point_mouseover(args, elem, d) {
     this.rolloverOff = function(args) {
       var svg = mg_get_svg_child_of(args.target);
 
-<<<<<<< HEAD
       return function(d,i) {
           args.hoverLayer.html("");
 
-          if (args.linked && MG.globals.link) {
-=======
-      return function(d, i) {
         if (args.linked && MG.globals.link) {
->>>>>>> master
           MG.globals.link = false;
 
           d3.selectAll('.mg-voronoi .path-' + i)
